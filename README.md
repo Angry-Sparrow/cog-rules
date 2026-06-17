@@ -37,8 +37,8 @@ cog-rules/
 ## 复刻 / 在新机器上安装
 
 ```bash
-git clone https://github.com/Angry-Sparrow/cog-rules.git ~/lirui/cog-rules
-cd ~/lirui/cog-rules
+git clone https://github.com/Angry-Sparrow/cog-rules.git ~/cog-rules
+cd ~/cog-rules
 ./sync-rules.sh        # 全局工具入口就位(幂等,可反复跑)
 ```
 
@@ -60,7 +60,7 @@ cd ~/lirui/cog-rules
 
 ```bash
 # cog-rules: 单一源仓库路径
-export COG_RULES_DIR="$HOME/lirui/cog-rules"
+export COG_RULES_DIR="$HOME/cog-rules"   # 改成你本机实际 clone 路径
 
 # 手动同步别名
 alias synrules="$COG_RULES_DIR/sync-rules.sh"
